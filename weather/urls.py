@@ -17,5 +17,6 @@ urlpatterns = [
     url(r'^removeplants/', views.removeplants, name='removeplants'),
     url(r'^motor/', views.motor, name='motor'),
     url(r'^index1/', views.index1, name='index1'),
-    url(r'^findtime/', views.find_time, name='find_time'),    
+    url(r'^findtime/', views.find_time, name='find_time'),
+    url(r'^getplants/', views.getplants, name='getplants'),    
 ]

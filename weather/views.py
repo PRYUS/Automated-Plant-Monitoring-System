@@ -170,3 +170,9 @@ def viewplants(request):
     li=unique.sort()
     hell={'un':li}
     return render(request,'removeplants.html',hell)
+
+def getplants(request):
+    l=plant.objects.filter(pid1=1)
+    l.delete()
+    hell={'un':[1,2,3,2,23,2]}
+    return render(request,'getplants.html',hell)
