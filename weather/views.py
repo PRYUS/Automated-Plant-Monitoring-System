@@ -162,3 +162,11 @@ def motor(request):
 @csrf_exempt
 def find_time(request):
     return render(request,"index.html")
+
+def viewplants(request):
+    p=plant.objects.filter(pid1=1)
+    p.delete()
+    unique=[1,2,6,8,7,3,9]
+    li=unique.sort()
+    hell={'un':li}
+    return render(request,'removeplants.html',hell)
