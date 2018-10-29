@@ -158,3 +158,7 @@ def motor(request):
 
 #functiom to modify plant details
 #def modifyplants(request):
+
+@csrf_exempt
+def find_time(request):
+    return render(request,"index.html")
