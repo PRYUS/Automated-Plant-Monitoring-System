@@ -176,3 +176,8 @@ def getplants(request):
     l.delete()
     hell={'un':[1,2,3,2,23,2]}
     return render(request,'getplants.html',hell)
+
+def likeplants(request):
+    l=plant.objects.all()
+    hell={'un':l}
+    return render(request,'getplants.html',hell)
